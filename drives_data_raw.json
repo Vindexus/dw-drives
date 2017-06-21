@@ -1,0 +1,188 @@
+{
+  "drives": {
+    "contempt": {
+      "description": "Offend an NPC of importance with your brutish ways.",
+      "key": "contempt",
+      "name": "Contempt"
+    },
+    "gigantic_melancholy": {
+      "description": "Let a problem escalate while you brood, drown your sorrows, or express your disgust.",
+      "key": "gigantic_melancholy",
+      "name": "Gigantic Melancholy"
+    },
+    "gigantic_mirth": {
+      "description": "Cause trouble for your allies by indulging in revelry, romance, or celebration.",
+      "key": "gigantic_mirth",
+      "name": "Gigantic Mirth"
+    },
+    "honor": {
+      "description": "Keep an oath that you have made to an NPC.",
+      "key": "honor",
+      "name": "Honor"
+    },
+    "pride": {
+      "description": "Put someone in their place (or their grave) for disrespecting you.",
+      "key": "pride",
+      "name": "Pride"
+    },
+    "traditional": {
+      "description": "Eschew a convention of the civilized world",
+      "key": "traditional",
+      "name": "Traditional"
+    },
+    "caring": {
+      "description": "Teach someone the ways of your people.",
+      "key": "caring",
+      "name": "Caring"
+    },
+    "challenge": {
+      "description": "Provoke a fight with a notable enemy, just you and them.",
+      "key": "challenge",
+      "name": "Challenge"
+    },
+    "glory": {
+      "description": "Show off in front of NPCs who can go on to tell your tale.",
+      "key": "glory",
+      "name": "Glory"
+    },
+    "peace": {
+      "description": "Settle a dispute or end a fight without bloodshed.",
+      "key": "peace",
+      "name": "Peace"
+    },
+    "vengeance": {
+      "description": "Avenge a wrong or hurt done to you or your allies.",
+      "key": "vengeance",
+      "name": "Vengeance"
+    },
+    "duty": {
+      "description": "Defend those weaker than you.",
+      "key": "duty",
+      "name": "Duty"
+    },
+    "victory": {
+      "description": "Defeat a worthy opponent.",
+      "key": "victory",
+      "name": "Victory"
+    },
+    "carnage": {
+      "description": "Kill a defenseless or surrendered enemy.",
+      "key": "carnage",
+      "name": "Carnage"
+    }
+  },
+  "lists": [
+    {
+      "name": "Barbarian / Berserker / Warrior",
+      "drives": {
+        "points_to": "drives",
+        "list": [
+          "contempt",
+          "gigantic_melancholy",
+          "gigantic_mirth",
+          "honor",
+          "pride",
+          "traditional",
+          "caring"
+        ]
+      },
+      "classes": [
+        "barbarian",
+        "berserker",
+        "warrior"
+      ]
+    },
+    {
+      "name": "Fighter / Brawler / Mercenary",
+      "drives": {
+        "points_to": "drives",
+        "list": [
+          "challenge",
+          "glory",
+          "peace",
+          "pride",
+          "vengeance",
+          "duty",
+          "victory",
+          "carnage"
+        ]
+      },
+      "classes": [
+        "fighter",
+        "brawler",
+        "mercenary"
+      ]
+    }
+  ],
+  "key": "index",
+  "contempt": {
+    "description": "Offend an NPC of importance with your brutish ways.",
+    "key": "contempt",
+    "name": "Contempt"
+  },
+  "gigantic_melancholy": {
+    "description": "Let a problem escalate while you brood, drown your sorrows, or express your disgust.",
+    "key": "gigantic_melancholy",
+    "name": "Gigantic Melancholy"
+  },
+  "gigantic_mirth": {
+    "description": "Cause trouble for your allies by indulging in revelry, romance, or celebration.",
+    "key": "gigantic_mirth",
+    "name": "Gigantic Mirth"
+  },
+  "honor": {
+    "description": "Keep an oath that you have made to an NPC.",
+    "key": "honor",
+    "name": "Honor"
+  },
+  "pride": {
+    "description": "Put someone in their place (or their grave) for disrespecting you.",
+    "key": "pride",
+    "name": "Pride"
+  },
+  "traditional": {
+    "description": "Eschew a convention of the civilized world",
+    "key": "traditional",
+    "name": "Traditional"
+  },
+  "caring": {
+    "description": "Teach someone the ways of your people.",
+    "key": "caring",
+    "name": "Caring"
+  },
+  "challenge": {
+    "description": "Provoke a fight with a notable enemy, just you and them.",
+    "key": "challenge",
+    "name": "Challenge"
+  },
+  "glory": {
+    "description": "Show off in front of NPCs who can go on to tell your tale.",
+    "key": "glory",
+    "name": "Glory"
+  },
+  "peace": {
+    "description": "Settle a dispute or end a fight without bloodshed.",
+    "key": "peace",
+    "name": "Peace"
+  },
+  "vengeance": {
+    "description": "Avenge a wrong or hurt done to you or your allies.",
+    "key": "vengeance",
+    "name": "Vengeance"
+  },
+  "duty": {
+    "description": "Defend those weaker than you.",
+    "key": "duty",
+    "name": "Duty"
+  },
+  "victory": {
+    "description": "Defeat a worthy opponent.",
+    "key": "victory",
+    "name": "Victory"
+  },
+  "carnage": {
+    "description": "Kill a defenseless or surrendered enemy.",
+    "key": "carnage",
+    "name": "Carnage"
+  }
+}
