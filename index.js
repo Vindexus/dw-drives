@@ -4,17 +4,17 @@ var colors = require('colors');
 let Drives = function () {
 }
 
-Drives.prototype.extendDataCompiler = function (compiler) {
+Drives.prototype.extendDataCompiler = function (compiler, opts) {
   compiler.registerStep((data) => {
-    console.log('='.repeat(60).bgWhite.black)
-    console.log('');
-    console.log('Running '.cyan + 'dw-drives'.bgCyan.black + ' module compile step'.cyan);
-    console.log('');
+    console.log('='.repeat(60).cyan)
+    console.log('Running '.cyan + 'dw-drives'.bgCyan.black + (' module ' + opts.compilerType + ' compile step').cyan);
     //This is just a sample module, so all we're doing is giving each class the same drives
     for(var key in data.classes) {
       var cls = data.classes[key];
       delete cls.alignments;
       delete cls.alignments_list;
+      delete compiler.config.pointers['classes.' + key + '.alignments_list'];
+
       //Find the drives list that matches this class
       var foundIt = false
       moduleData.lists.forEach(function (driveList) {
@@ -29,13 +29,21 @@ Drives.prototype.extendDataCompiler = function (compiler) {
       }
       data[key] = cls;
     };
-
+    console.log('='.repeat(60).cyan)
     return data;
   });
 }
 
-Drives.prototype.extendDataCompiler = function (compiler) {
-  this.extendCompiler(compiler);
+Drives.prototype.extendRawCompiler = function (compiler) {
+  this.extendDataCompiler(compiler, {
+    compilerType: 'raw'
+  });
+}
+
+Drives.prototype.extendBasicCompiler = function (compiler) {
+  this.extendDataCompiler(compiler, {
+    compilerType: 'basic'
+  });
 }
 
 module.exports = Drives;
