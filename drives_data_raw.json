@@ -74,18 +74,15 @@
   "lists": [
     {
       "name": "Barbarian / Berserker / Warrior",
-      "drives": {
-        "points_to": "drives",
-        "list": [
-          "contempt",
-          "gigantic_melancholy",
-          "gigantic_mirth",
-          "honor",
-          "pride",
-          "traditional",
-          "caring"
-        ]
-      },
+      "drive_keys": [
+        "contempt",
+        "gigantic_melancholy",
+        "gigantic_mirth",
+        "honor",
+        "pride",
+        "traditional",
+        "caring"
+      ],
       "classes": [
         "barbarian",
         "berserker",
@@ -94,19 +91,16 @@
     },
     {
       "name": "Fighter / Brawler / Mercenary",
-      "drives": {
-        "points_to": "drives",
-        "list": [
-          "challenge",
-          "glory",
-          "peace",
-          "pride",
-          "vengeance",
-          "duty",
-          "victory",
-          "carnage"
-        ]
-      },
+      "drive_keys": [
+        "challenge",
+        "glory",
+        "peace",
+        "pride",
+        "vengeance",
+        "duty",
+        "victory",
+        "carnage"
+      ],
       "classes": [
         "fighter",
         "brawler",
@@ -114,7 +108,6 @@
       ]
     }
   ],
-  "key": "index",
   "contempt": {
     "description": "Offend an NPC of importance with your brutish ways.",
     "key": "contempt",

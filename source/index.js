@@ -49,22 +49,14 @@ var drives = {
 }
 
 drives = Parser.helpers.completeObjects(drives);
-console.log('drives fff', drives);
-
 var driveLists = [
   {
     name: 'Barbarian / Berserker / Warrior',
-    drives: {
-      points_to: 'drives',
-      list: ['contempt', 'gigantic_melancholy', 'gigantic_mirth', 'honor', 'pride', 'traditional', 'caring']
-    },
+    drive_keys: ['contempt', 'gigantic_melancholy', 'gigantic_mirth', 'honor', 'pride', 'traditional', 'caring'],
     classes: ['barbarian', 'berserker', 'warrior']
   }, {
     name: 'Fighter / Brawler / Mercenary',
-    drives: {
-      points_to: 'drives',
-      list: ['challenge', 'glory', 'peace', 'pride', 'vengeance', 'duty', 'victory', 'carnage']
-    },
+    drive_keys: ['challenge', 'glory', 'peace', 'pride', 'vengeance', 'duty', 'victory', 'carnage'],
     classes: ['fighter', 'brawler', 'mercenary']
   }
 ];
